@@ -5,7 +5,7 @@ _Applies to: Word 2016, Word for iPad, Word for Mac 2016, Office 2016_
 
 Represents the body of a document or a section.
 
-## Properties
+## Properties – [edit this]
 
 | Property             | Type              |Description
 
@@ -45,29 +45,29 @@ Represents the body of a document or a section.
 
 |[getRange(rangeLocation: RangeLocation)](#getrangerangelocation-rangelocation)|[Range](range.md)|Gets the whole body, or the starting or ending point of the body, as a range.|
 
-|[insertBreak(breakType: BreakType, insertLocation: InsertLocation)](#insertbreakbreaktype-breaktype-insertlocation-insertlocation)|void|Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.|
+|[insertBreak(breakType: BreakType, insertLocation: InsertLocation)](#insertbreakbreaktype-breaktype-insertlo)|void|Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.|
 
 |[insertContentControl()](#insertcontentcontrol)|[ContentControl](contentcontrol.md)|Wraps the body object with a Rich Text content control.|
 
-|[insertFileFromBase64(base64File: string, insertLocation: InsertLocation)](#insertfilefrombase64base64file-string-insertlocation-insertlocation)|[Range](range.md)|Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
+|[insertFileFromBase64(base64File: string, insertLocation: InsertLocation)](#insertfilefrombase64base64file-string-i)|[Range](range.md)|Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
 
-|[insertHtml(html: string, insertLocation: InsertLocation)](#inserthtmlhtml-string-insertlocation-insertlocation)|[Range](range.md)|Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
+|[insertHtml(html: string, insertLocation: InsertLocation)](#inserthtmlhtml-string-insertlocation-in)|[Range](range.md)|Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
 
-|[insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)](#insertinlinepicturefrombase64base64encodedimage-string-insertlocation-insertlocation)|[InlinePicture](inlinepicture.md)|Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.|
+|[insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)](#insertinlinepicturefrombase64base64enco)|[InlinePicture](inlinepicture.md)|Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.|
 
-|[insertOoxml(ooxml: string, insertLocation: InsertLocation)](#insertooxmlooxml-string-insertlocation-insertlocation)|[Range](range.md)|Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.|
+|[insertOoxml(ooxml: string, insertLocation: InsertLocation)](#insertooxmlooxml-string-insertlocation-)|[Range](range.md)|Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.|
 
-|[insertParagraph(paragraphText: string, insertLocation: InsertLocation)](#insertparagraphparagraphtext-string-insertlocation-insertlocation)|[Paragraph](paragraph.md)|Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.|
+|[insertParagraph(paragraphText: string, insertLocation: InsertLocation)](#insertparagraphparagraphtext-string-ins)|[Paragraph](paragraph.md)|Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.|
 
-|[insertText(text: string, insertLocation: InsertLocation)](#inserttexttext-string-insertlocation-insertlocation)|[Range](range.md)|Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
+|[insertText(text: string, insertLocation: InsertLocation)](#inserttexttext-string-insertlocation-in)|[Range](range.md)|Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|
 
 |[load(param: object)](#loadparam-object)|void|Fills the proxy object created in JavaScript layer with property and object values specified in the parameter.|
 
-|[search(searchText: string, searchOptions: ParamTypeStrings.SearchOptions)](#searchsearchtext-string-searchoptions-paramtypestrings.searchoptions)|[SearchResultCollection](searchresultcollection.md)|Performs a search with the specified searchOptions on the scope of the body object. The search results are a collection of range objects.|
+|[search(searchText: string, searchOptions: ParamTypeStrings.SearchOptions)](#searchsearchtext-string-searchoptions-p)|[SearchResultCollection](searchresultcollection.md)|Performs a search with the specified searchOptions on the scope of the body object. The search results are a collection of range objects.|
 
 |[select(selectionMode: SelectionMode)](#selectselectionmode-selectionmode)|void|Selects the body and navigates the Word UI to it.|
 
-|[splitTextRanges(delimiters: string[], multiParagraphs: bool, trimDelimiters: bool, trimWhitespace: bool)](#splittextrangesdelimiters-string-multiparagraphs-bool-trimdelimiters-bool-trimwhitespace-bool)|[RangeCollection](rangecollection.md)|Splits the body into child ranges by using delimiters.|
+|[splitTextRanges(delimiters: string[], multiParagraphs: bool, trimDelimiters: bool, trimWhitespace: bool)](#splittextrangesdelimiters-string-multip)|[RangeCollection](rangecollection.md)|Splits the body into child ranges by using delimiters.|
 
 ## Method Details
 
@@ -77,11 +77,7 @@ Clears the contents of the body object. The user can perform the undo operation 
 
 #### Syntax
 
-```js
-
-bodyObject.clear();
-
-```
+<pre>bodyObject.clear();</pre>
 
 #### Parameters
 
@@ -97,11 +93,7 @@ Gets the HTML representation of the body object.
 
 #### Syntax
 
-```js
-
-bodyObject.getHtml();
-
-```
+<pre>bodyObject.getHtml();</pre>
 
 #### Parameters
 
@@ -117,11 +109,7 @@ Gets the OOXML (Office Open XML) representation of the body object.
 
 #### Syntax
 
-```js
-
-bodyObject.getOoxml();
-
-```
+<pre>bodyObject.getOoxml();</pre>
 
 #### Parameters
 
@@ -137,11 +125,7 @@ Gets the whole body, or the starting or ending point of the body, as a range.
 
 #### Syntax
 
-```js
-
-bodyObject.getRange(rangeLocation);
-
-```
+<pre>bodyObject.getRange(rangeLocation);</pre>
 
 #### Parameters
 
@@ -161,11 +145,7 @@ Inserts a break at the specified location in the main document. The insertLocati
 
 #### Syntax
 
-```js
-
-bodyObject.insertBreak(breakType, insertLocation);
-
-```
+<pre>bodyObject.insertBreak(breakType, insertLocation);</pre>
 
 #### Parameters
 
@@ -187,11 +167,7 @@ Wraps the body object with a Rich Text content control.
 
 #### Syntax
 
-```js
-
-bodyObject.insertContentControl();
-
-```
+<pre>bodyObject.insertContentControl();</pre>
 
 #### Parameters
 
@@ -207,11 +183,7 @@ Inserts a document into the body at the specified location. The insertLocation v
 
 #### Syntax
 
-```js
-
-bodyObject.insertFileFromBase64(base64File, insertLocation);
-
-```
+<pre>bodyObject.insertFileFromBase64(base64File, insertLocation);</pre>
 
 #### Parameters
 
@@ -233,11 +205,7 @@ Inserts HTML at the specified location. The insertLocation value can be 'Replace
 
 #### Syntax
 
-```js
-
-bodyObject.insertHtml(html, insertLocation);
-
-```
+<pre>bodyObject.insertHtml(html, insertLocation);</pre>
 
 #### Parameters
 
@@ -259,11 +227,7 @@ Inserts a picture into the body at the specified location. The insertLocation va
 
 #### Syntax
 
-```js
-
-bodyObject.insertInlinePictureFromBase64(base64EncodedImage, insertLocation);
-
-```
+<pre>bodyObject.insertInlinePictureFromBase64(base64EncodedImage, insertLocation);</pre>
 
 #### Parameters
 
@@ -285,11 +249,7 @@ Inserts OOXML at the specified location.  The insertLocation value can be 'Repl
 
 #### Syntax
 
-```js
-
-bodyObject.insertOoxml(ooxml, insertLocation);
-
-```
+<pre>bodyObject.insertOoxml(ooxml, insertLocation);</pre>
 
 #### Parameters
 
@@ -311,11 +271,7 @@ Inserts a paragraph at the specified location. The insertLocation value can be '
 
 #### Syntax
 
-```js
-
-bodyObject.insertParagraph(paragraphText, insertLocation);
-
-```
+<pre>bodyObject.insertParagraph(paragraphText, insertLocation);</pre>
 
 #### Parameters
 
@@ -337,11 +293,7 @@ Inserts text into the body at the specified location. The insertLocation value c
 
 #### Syntax
 
-```js
-
-bodyObject.insertText(text, insertLocation);
-
-```
+<pre>bodyObject.insertText(text, insertLocation);</pre>
 
 #### Parameters
 
@@ -363,11 +315,7 @@ Fills the proxy object created in JavaScript layer with property and object valu
 
 #### Syntax
 
-```js
-
-object.load(param);
-
-```
+<pre>object.load(param);</pre>
 
 #### Parameters
 
@@ -387,11 +335,7 @@ Performs a search with the specified searchOptions on the scope of the body obje
 
 #### Syntax
 
-```js
-
-bodyObject.search(searchText, searchOptions);
-
-```
+<pre>bodyObject.search(searchText, searchOptions);</pre>
 
 #### Parameters
 
@@ -413,11 +357,7 @@ Selects the body and navigates the Word UI to it.
 
 #### Syntax
 
-```js
-
-bodyObject.select(selectionMode);
-
-```
+<pre>bodyObject.select(selectionMode);</pre>
 
 #### Parameters
 
@@ -437,11 +377,7 @@ Splits the body into child ranges by using delimiters.
 
 #### Syntax
 
-```js
-
-bodyObject.splitTextRanges(delimiters, multiParagraphs, trimDelimiters, trimWhitespace);
-
-```
+<pre>bodyObject.splitTextRanges(delimiters, multiParagraphs, trimDelimiters, trimWhitespace);</pre>
 
 #### Parameters
 
